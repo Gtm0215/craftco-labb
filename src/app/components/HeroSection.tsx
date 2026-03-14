@@ -1,4 +1,4 @@
-import hero from "../../assets/hero.png"
+import hero from "../../../assets/hero.png"
 
 export default function HeroSection() {
   return (
@@ -39,8 +39,7 @@ export default function HeroSection() {
           style={{
             fontSize: "72px",
             fontWeight: 500,
-            marginBottom: "10px",
-            fontFamily: "Georgia, serif"
+            marginBottom: "10px"
           }}
         >
           #ART COLLECTION
@@ -48,8 +47,7 @@ export default function HeroSection() {
 
         <p
           style={{
-            fontSize: "20px",
-            opacity: 0.9
+            fontSize: "20px"
           }}
         >
           Handmade paintings & creative prints you'll love
