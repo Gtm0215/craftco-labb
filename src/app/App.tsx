@@ -10,14 +10,23 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <div>
-      <AnnouncementBar />
-      <Header />
-      <HeroSection />
-      <CategoryGrid />
-      <FeaturedProducts />
-      <ConnectSection />
-      <FAQSection />
-      <Footer />
+
+      <AnnouncementBar/>
+
+      <Header/>
+
+      <HeroSection/>
+
+      <CategoryGrid/>
+
+      <FeaturedProducts/>
+
+      <ConnectSection/>
+
+      <FAQSection/>
+
+      <Footer/>
+
     </div>
   )
 }
