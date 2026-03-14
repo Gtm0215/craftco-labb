@@ -1,40 +1,43 @@
-export default function Header() {
-  return (
-    <header
-      style={{
-        background: "#fff",
-        borderBottom: "1px solid #e8e2e2",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1400px",
-          margin: "0 auto",
-          padding: "28px 24px 24px",
-        }}
-      >
-        <div
-          style={{
-            textAlign: "center",
-            fontSize: "64px",
-            fontFamily: "Georgia, serif",
-            lineHeight: 1,
-            marginBottom: "26px",
-          }}
-        >
-          craftco.lab
-        </div>
+export default function Header(){
 
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div style={{ width: "180px" }} />
+return(
 
+<div style={{
+background:"white",
+borderBottom:"1px solid #eee"
+}}>
+
+<div className="container">
+
+<h1 style={{
+textAlign:"center",
+fontFamily:"serif",
+fontSize:"40px"
+}}>
+craftco.lab
+</h1>
+
+<div style={{
+display:"flex",
+justifyContent:"center",
+gap:"30px",
+marginTop:"10px"
+}}>
+
+<a>Categories</a>
+<a>Store</a>
+<a>Track Order</a>
+<a>Contact Us</a>
+
+</div>
+
+</div>
+
+</div>
+
+)
+
+}
           <nav
             style={{
               display: "flex",
