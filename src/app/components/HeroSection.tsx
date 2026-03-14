@@ -1,40 +1,49 @@
 import hero from "../../assets/hero.png"
 
-export default function HeroSection() {
-  return (
-    <section
-      style={{
-        maxWidth: "1400px",
-        margin: "38px auto 0",
-        padding: "0 24px",
-      }}
-    >
-      <div
-        style={{
-          position: "relative",
-          borderRadius: "28px",
-          overflow: "hidden",
-          minHeight: "520px",
-          backgroundImage: `url(${hero})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "rgba(0,0,0,0.12)",
-          }}
-        />
+export default function HeroSection(){
 
-        <div
-          style={{
-            position: "relative",
-            zIndex: 2,
+return(
+
+<div className="container">
+
+<div style={{
+position:"relative",
+borderRadius:"20px",
+overflow:"hidden"
+}}>
+
+<img src={hero}/>
+
+<div style={{
+position:"absolute",
+top:"40%",
+left:"50%",
+transform:"translate(-50%,-50%)",
+color:"white",
+textAlign:"center"
+}}>
+
+<h1 style={{fontSize:"60px",fontFamily:"serif"}}>
+
+#ART COLLECTION
+
+</h1>
+
+<p>
+
+Handmade paintings & creative prints you'll love
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+)
+
+}            zIndex: 2,
             textAlign: "center",
             color: "#fff",
             padding: "24px",
