@@ -1,43 +1,42 @@
-export default function Header(){
+export default function Header() {
+  return (
+    <header
+      style={{
+        background: "#ffffff",
+        borderBottom: "1px solid #e8e2e2"
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "1400px",
+          margin: "0 auto",
+          padding: "28px 24px 24px"
+        }}
+      >
+        {/* Logo */}
+        <div
+          style={{
+            textAlign: "center",
+            fontSize: "64px",
+            fontFamily: "Georgia, serif",
+            lineHeight: 1,
+            marginBottom: "26px"
+          }}
+        >
+          craftco.lab
+        </div>
 
-return(
+        {/* Navigation */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "20px"
+          }}
+        >
+          <div style={{ width: "180px" }} />
 
-<div style={{
-background:"white",
-borderBottom:"1px solid #eee"
-}}>
-
-<div className="container">
-
-<h1 style={{
-textAlign:"center",
-fontFamily:"serif",
-fontSize:"40px"
-}}>
-craftco.lab
-</h1>
-
-<div style={{
-display:"flex",
-justifyContent:"center",
-gap:"30px",
-marginTop:"10px"
-}}>
-
-<a>Categories</a>
-<a>Store</a>
-<a>Track Order</a>
-<a>Contact Us</a>
-
-</div>
-
-</div>
-
-</div>
-
-)
-
-}
           <nav
             style={{
               display: "flex",
@@ -45,7 +44,7 @@ marginTop:"10px"
               fontSize: "18px",
               alignItems: "center",
               justifyContent: "center",
-              flexWrap: "wrap",
+              flexWrap: "wrap"
             }}
           >
             <a href="#">Categories</a>
@@ -60,7 +59,7 @@ marginTop:"10px"
               display: "flex",
               justifyContent: "flex-end",
               gap: "18px",
-              fontSize: "26px",
+              fontSize: "26px"
             }}
           >
             <span>⌕</span>
