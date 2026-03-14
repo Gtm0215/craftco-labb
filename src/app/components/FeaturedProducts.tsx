@@ -1,40 +1,73 @@
-import customBulbDeco from "../../assets/custom-bulb-deco.png"
-import customWallCd from "../../assets/custom-wall-cd.png"
-import oceanVinyl from "../../assets/ocean-vinyl.png"
-import xmasPostcard from "../../assets/xmas-postcard.png"
-import animalCanvas from "../../assets/animal-canvas.png"
-import giftHamper from "../../assets/gift-hamper.png"
+import bulb from "../../assets/custom-bulb-deco.png"
+import cd from "../../assets/custom-wall-cd.png"
+import ocean from "../../assets/ocean-vinyl.png"
+import xmas from "../../assets/xmas-postcard.png"
+import animal from "../../assets/animal-canvas.png"
+import hamper from "../../assets/gift-hamper.png"
 
-const products = [
-  { title: "Custom Bulb Deco", price: "₹299", image: customBulbDeco },
-  { title: "Custom Wall CD Hanging", price: "₹299", image: customWallCd },
-  { title: "Ocean on Vinyl", price: "₹499", image: oceanVinyl },
-  { title: "Custom Xmas Postcard", price: "₹150", image: xmasPostcard },
-  { title: "Animal Canvas", price: "₹599", image: animalCanvas },
-  { title: "Mystery Craft Hamper for Gifting", price: "₹1,299", image: giftHamper },
+export default function FeaturedProducts(){
+
+const products=[
+
+{title:"Custom Bulb Deco",price:"₹299",img:bulb},
+{title:"Custom Wall CD Hanging",price:"₹299",img:cd},
+{title:"Ocean on Vinyl",price:"₹499",img:ocean},
+{title:"Custom Xmas Postcard",price:"₹150",img:xmas},
+{title:"Animal Canvas",price:"₹599",img:animal},
+{title:"Mystery Craft Hamper",price:"₹1299",img:hamper}
+
 ]
 
-export default function FeaturedProducts() {
-  return (
-    <section
-      style={{
-        maxWidth: "1400px",
-        margin: "56px auto 0",
-        padding: "0 24px 20px",
-      }}
-    >
-      <h2
-        style={{
-          textAlign: "center",
-          fontSize: "58px",
-          fontFamily: "Georgia, serif",
-          fontWeight: 400,
-          margin: "0 0 34px",
-        }}
-      >
-        Featured Products
-      </h2>
+return(
 
+<div className="container">
+
+<h2 style={{textAlign:"center",fontSize:"40px",fontFamily:"serif"}}>
+
+Featured Products
+
+</h2>
+
+<div style={{
+display:"grid",
+gridTemplateColumns:"repeat(3,1fr)",
+gap:"30px"
+}}>
+
+{products.map(p=>(
+
+<div key={p.title} style={{background:"white",padding:"15px",borderRadius:"10px"}}>
+
+<img src={p.img}/>
+
+<h3>{p.title}</h3>
+
+<p style={{color:"#e35c5c"}}>{p.price}</p>
+
+<button style={{
+background:"#e35c5c",
+color:"white",
+border:"none",
+padding:"10px",
+borderRadius:"5px",
+width:"100%"
+}}>
+
+Add to Cart
+
+</button>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+)
+
+}
       <div
         style={{
           display: "grid",
