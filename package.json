@@ -1,8 +1,11 @@
 {
   "name": "craftco-lab",
-  "private": true,
   "version": "1.0.0",
-  "type": "module",
+  "private": true,
+
+  "engines": {
+    "node": "18.x"
+  },
 
   "scripts": {
     "dev": "vite",
