@@ -1,75 +1,59 @@
 import hero from "../../assets/hero.png"
 
-export default function HeroSection(){
+export default function HeroSection() {
+  return (
+    <section
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "520px",
+        overflow: "hidden",
+        borderRadius: "16px",
+        margin: "40px auto",
+        maxWidth: "1400px"
+      }}
+    >
+      <img
+        src={hero}
+        alt="Hero"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover"
+        }}
+      />
 
-return(
-
-<div className="container">
-
-<div style={{
-position:"relative",
-borderRadius:"20px",
-overflow:"hidden"
-}}>
-
-<img src={hero}/>
-
-<div style={{
-position:"absolute",
-top:"40%",
-left:"50%",
-transform:"translate(-50%,-50%)",
-color:"white",
-textAlign:"center"
-}}>
-
-<h1 style={{fontSize:"60px",fontFamily:"serif"}}>
-
-#ART COLLECTION
-
-</h1>
-
-<p>
-
-Handmade paintings & creative prints you'll love
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-)
-
-}            zIndex: 2,
-            textAlign: "center",
-            color: "#fff",
-            padding: "24px",
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 2,
+          textAlign: "center",
+          color: "#ffffff",
+          padding: "24px"
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "72px",
+            fontWeight: 500,
+            marginBottom: "10px",
+            fontFamily: "Georgia, serif"
           }}
         >
-          <h1
-            style={{
-              margin: 0,
-              fontFamily: "Georgia, serif",
-              fontSize: "84px",
-              fontWeight: 400,
-              letterSpacing: "1px",
-            }}
-          >
-            #ART COLLECTION
-          </h1>
+          #ART COLLECTION
+        </h1>
 
-          <p
-            style={{
-              marginTop: "18px",
-              fontSize: "22px",
-            }}
-          >
-            Handmade paintings & creative prints you'll love
-          </p>
-        </div>
+        <p
+          style={{
+            fontSize: "20px",
+            opacity: 0.9
+          }}
+        >
+          Handmade paintings & creative prints you'll love
+        </p>
       </div>
     </section>
   )
