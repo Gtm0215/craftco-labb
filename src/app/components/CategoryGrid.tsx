@@ -3,38 +3,48 @@ import customPaintings from "../../assets/custom-paintings.png"
 import bookmarks from "../../assets/bookmarks.png"
 import postcards from "../../assets/postcards.png"
 
-const categories = [
-  { title: "Paintings", image: paintings },
-  { title: "Custom Paintings", image: customPaintings },
-  { title: "Bookmarks", image: bookmarks },
-  { title: "Postcards", image: postcards },
+export default function CategoryGrid(){
+
+const categories=[
+{title:"Paintings",img:paintings},
+{title:"Custom Paintings",img:customPaintings},
+{title:"Bookmarks",img:bookmarks},
+{title:"Postcards",img:postcards}
 ]
 
-export default function CategoryGrid() {
-  return (
-    <section
-      style={{
-        maxWidth: "1400px",
-        margin: "48px auto 0",
-        padding: "0 24px",
-      }}
-    >
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-          gap: "22px",
-        }}
-      >
-        {categories.map((item) => (
-          <div
-            key={item.title}
-            style={{
-              position: "relative",
-              borderRadius: "24px",
-              overflow: "hidden",
-              minHeight: "370px",
-              backgroundImage: `url(${item.image})`,
+return(
+
+<div className="container">
+
+<div style={{
+display:"grid",
+gridTemplateColumns:"repeat(4,1fr)",
+gap:"20px"
+}}>
+
+{categories.map(cat=>(
+
+<div key={cat.title}>
+
+<img src={cat.img} style={{borderRadius:"10px"}}/>
+
+<h3 style={{textAlign:"center"}}>
+
+{cat.title}
+
+</h3>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+)
+
+}              backgroundImage: `url(${item.image})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
