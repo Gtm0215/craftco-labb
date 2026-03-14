@@ -8,6 +8,16 @@ import FAQSection from "./components/FAQSection"
 import Footer from "./components/Footer"
 
 export default function App() {
-return ( <div> <AnnouncementBar /> <Header /> <HeroSection /> <CategoryGrid /> <FeaturedProducts /> <ConnectSection /> <FAQSection /> <Footer /> </div>
-)
+  return (
+    <div>
+      <AnnouncementBar />
+      <Header />
+      <HeroSection />
+      <CategoryGrid />
+      <FeaturedProducts />
+      <ConnectSection />
+      <FAQSection />
+      <Footer />
+    </div>
+  )
 }
